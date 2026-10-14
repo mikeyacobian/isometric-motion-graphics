@@ -1,0 +1,9 @@
+{
+  "name": "isometric-motion-graphics",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node --experimental-strip-types figures/money-loop/build.ts --light --audit && node --experimental-strip-types figures/money-loop/build.ts",
+    "dev": "node --experimental-strip-types figures/money-loop/build.ts --light --audit && node scripts/serve.mjs"
+  }
+}
