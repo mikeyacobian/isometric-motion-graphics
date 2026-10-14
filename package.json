@@ -1,0 +1,12 @@
+{
+  "name": "isometric-motion-graphics",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node --experimental-strip-types figures/campaign-bench/build.ts --light && node --experimental-strip-types figures/campaign-bench/build.ts",
+    "dev": "node --experimental-strip-types figures/campaign-bench/build.ts --light && node scripts/serve.mjs",
+    "capture": "node scripts/capture.mjs docs/index.html --out shots/desktop.png",
+    "lines": "node scripts/lines.mjs docs/index.html --out shots/lines.png",
+    "audit": "node --experimental-strip-types figures/campaign-bench/build.ts --light --audit"
+  }
+}
