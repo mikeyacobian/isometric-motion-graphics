@@ -39,15 +39,15 @@ const HOPPER_H = 14;
 const SPAC = { x: 28, y: 4, w: 26, d: 24, r: 2.2 };
 const SPAC_H = 16;
 const HORN_AT: [number, number, number] = [54, 16, 16];
-const HORN_LEN = 17;
-const HORN_NECK = 5.2;
-const HORN_R0 = 3.8;
-const HORN_R1 = 9;
+const HORN_LEN = 19;
+const HORN_NECK = 5.4;
+const HORN_R0 = 4;
+const HORN_R1 = 10;
 const WALL = { x: 100, y: -22, w: 4, d: 26, r: 1.2 };
 const WALL_H = 32;
 const CUP = [118, -30];
-const CUP_R = 7.5;
-const CUP_H = 12;
+const CUP_R = 8.2;
+const CUP_H = 13;
 const METER = [8, -30];
 const METER_R = 11;
 const DIAL_H = 6;
@@ -247,11 +247,11 @@ put(
   [record(A.solid(hornF, hornProfile, { name: "horn.body", radius: hornRadius }))],
 );
 
-const plinth = { x: 76, y: 8, w: 18, d: 22, r: 2 };
+const plinth = { x: 76, y: 6, w: 20, d: 26, r: 2 };
 box("voters.pad", plinth, 0, 1.6, { tone: "lo" }, "", "voters");
-[12, 16, 20].forEach((height, index) => {
-  const card = { x: 80, y: 10 + index * 6.4, w: 8, d: 5.2, r: 0.9 };
-  box(`voters.card-${index}`, card, 1.6, height, { tone: "hi", crease: "lo" }, L(k.planOutline(k.insetPlan(card, 1.4), 1.6 + height, P, 3), { tone: "faint" }), "voters");
+[14, 18, 22].forEach((height, index) => {
+  const card = { x: 79, y: 8 + index * 8, w: 10, d: 6.4, r: 1 };
+  box(`voters.card-${index}`, card, 1.6, height, { tone: "hi", crease: "lo" }, L(k.planOutline(k.insetPlan(card, 1.6), 1.6 + height, P, 3), { tone: "faint" }), "voters");
 });
 
 puck("cup.pad", CUP[0], CUP[1], 0, 1.6, CUP_R + 3, { tone: "lo" }, 28);
