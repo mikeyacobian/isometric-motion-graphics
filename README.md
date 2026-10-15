@@ -1,6 +1,6 @@
-# Money loop
+# Campaign finance bench
 
-An isometric miniature town, built with the [Anatomy](https://skills.wheresryan.sh/anatomy) kit. Little buildings sit on one terrain slab. Coins travel between them in a loop.
+One isometric bench, built with the [Anatomy](https://skills.wheresryan.sh/anatomy) kit. A corporate vault, a super PAC tank, a broadcast, a firewall, and a podium. Two inputs move on their own, and either one can be set by hand.
 
 Open `index.html`, or:
 
@@ -12,22 +12,20 @@ Then open http://127.0.0.1:4173
 
 Dark theme, same drawing: `figures/money-loop/money-loop.html`.
 
-The loop plays on its own. Scroll over the figure to scrub. Hover a building to pause and name it. Arrow keys step the beats. Space returns to the start. A frame can be frozen with `?t=0.5&still=1` (t is 0–1 around the loop).
+The tour plays on its own and pauses while the pointer is on a part. Arrow up and down set treasury. Arrow left and right set employee gifts. Space clears both. Hover names the part under the pointer.
 
-## The loop
+## The three beats
 
 No words are drawn. The corner readout names the beat.
 
-1. Houses (people) and an office tower (companies) send coins out.
-2. A wide pipe carries unlimited money to the super PAC. A narrow pipe carries money to the PAC, the stand-in for a $5,000-per-candidate-per-election cap.
-3. The super PAC only lights a billboard toward two voters. It has no pipe to the candidate. The PAC also sends a coin along a second narrow pipe into campaign headquarters.
-4. Coins land on the ballot box, the headquarters flag rises, and the candidate walks to the capitol.
-5. A slab on the capitol is the one lit accent: the vote. A coin travels back to the houses, and the loop repeats.
+1. Treasury opens. Coins run the wide pipe and the tank fills. There is no ceiling on that number.
+2. Employee gifts run the thin pipe. The needle meets the stop at $5,000 and stays there.
+3. A disc leaves the broadcast and stops at the firewall. The tank does not drain into the podium, and the needle stays on the stop.
 
-| Rule | What the town does | Source |
+| Rule | What the bench does | Source |
 |---|---|---|
-| Corporation or person to a super PAC | Wide pipe, no cap drawn | [Contributions to super PACs](https://www.fec.gov/help-candidates-and-committees/taking-receipts-pac/contributions-to-super-pacs-and-hybrid-pacs/) |
-| Super PAC to a candidate | No pipe. Billboard only | [Who can and can't contribute](https://www.fec.gov/help-candidates-and-committees/candidate-taking-receipts/who-can-and-cant-contribute/) |
-| Multicandidate PAC to a candidate | Narrow pipe into headquarters, $5,000 per election | [SSF contribution limits](https://www.fec.gov/help-candidates-and-committees/making-disbursements-ssf-or-connected-organization/limits-contributions-made-candidates-by-ssf/) |
+| Corporation to a super PAC | Wide pipe into the tank, no cap | [Contributions to super PACs](https://www.fec.gov/help-candidates-and-committees/taking-receipts-pac/contributions-to-super-pacs-and-hybrid-pacs/) |
+| Super PAC to a candidate | No pipe. The vault port toward the podium is a blind flange. The broadcast faces the voters and stops at the firewall | [Who can and can't contribute](https://www.fec.gov/help-candidates-and-committees/candidate-taking-receipts/who-can-and-cant-contribute/) |
+| Employee / SSF gifts to a candidate | Thin pipe through the $5,000 stop into the podium | [SSF contribution limits](https://www.fec.gov/help-candidates-and-committees/making-disbursements-ssf-or-connected-organization/limits-contributions-made-candidates-by-ssf/) |
 
-The drawing is 40 named parts (49 drawn items) plus 6 coins that only exist while the loop runs.
+The drawing is 86 named parts (97 drawn items). The coins are not parts; they move inside reserved slots in the painter's order.
